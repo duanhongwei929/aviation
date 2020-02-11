@@ -1,0 +1,143 @@
+.mine-head{
+    height: 16rem;
+    background: #1081FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem 5rem;
+}
+.mine-head>div{
+    width: 100%;
+}
+.mine-head img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    float:left;
+}
+.mine-head .font{
+    float: left;
+    margin-left: 2rem;
+    width:calc(100% - 8rem);
+    margin-top:1rem;
+}
+.mine-head .font h1{
+    font-size: 2rem;
+    color:#fff;
+}
+.mine-head .font p{
+    font-size: 1.6rem;
+    color:#fff;
+}
+.mine-box{
+    position: absolute;
+    top:15rem;
+    padding: 0 5%;
+    width: 90%;
+}
+
+.mine-order h1{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.mine-order p{
+    margin-bottom: 0.5rem;
+}
+.mine-order h1 .order-img{
+    display: inline-block;
+    width: 2rem;
+    height: 2.5rem;
+    background: url("../images/mine-order.png") no-repeat;
+    background-size:1.9rem auto;
+    margin-right: 1rem;
+    float: left;
+}
+.index-form{
+    padding: 0 5%;
+    margin-top: 2rem;
+}
+.index-form input{
+    width: 90%;
+    font-size: 14px;
+    padding: 1rem 5%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    border:1px solid #999999;
+}
+.index-select{
+    padding: 0 5%;
+}
+.index-select p{
+    line-height: 30px;
+    margin-bottom: 0.5rem;
+}
+.index-select select{
+    width: 100%;
+    height: 46px;
+    padding: 0 5%;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+.index-select select option{
+    width: 100%;
+    height: 46px;
+    margin-bottom: 2rem;
+}
+.pay{
+    text-align: right;
+    line-height: 50px;
+    font-size: 16px;
+    margin-right: 5%;
+}
+.data-form{
+    width: 90%;
+    padding: 0 5%;
+}
+.data-form div{
+    width: 100%;
+    line-height: 50px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.data-form p{
+    width: 30%;
+    float: left;
+}
+.data-form input{
+    width: 70%;
+    line-height: 50px;
+    border: none;
+    float: left;
+}
+.data-form span{
+    color:red;
+}
+.data-form .ok{
+    color: #1081FA;
+}
+.faces{
+    width: 16rem;
+    height:16rem;
+    text-align: center;
+    line-height: 16rem;
+    color: #fff;
+    background: #1081FA;
+    border-radius: 50%;
+    margin: 10rem auto 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

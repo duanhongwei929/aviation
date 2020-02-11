@@ -1,0 +1,91 @@
+*{padding: 0;margin: 0;}
+
+html { font-size: 62.5%; } /* IE9以下兼容 */
+body { font-size: 14px; font-size: 1.4rem;background: #f8f8f8;} /* =14px */
+h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
+
+.f-l{ float: left;}
+.f-r{ float: right;}
+.o-h{ overflow: hidden;}
+.m-b-20{ margin-bottom: 20px;}
+.m-b-10{ margin-bottom: 10px;}
+.p-b-10{ padding-bottom: 10px;}
+.m-t-10{ margin-top: 10px;}
+.m-t-20{ margin-top: 20px;}
+.m-l-10{ margin-left: 10px;}
+.m-r-10{ margin-right: 10px;}
+.display-inBlock{ display: inline-block}
+.font-color-hui{ color:#999}
+.item-color{ color:#14ab73;}
+.main-box{ padding: 0 1rem;}
+
+.but-blue{
+    color:#fff;
+    background: #3785FF;
+}
+.but-30{
+    width: 30%;
+    height:4rem;
+    text-align: center;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    line-height: 4rem;
+}
+.but-100{
+    width: 90%;
+    height:4rem;
+    text-align: center;
+    margin: 0 5% 30px;
+    border-radius: 1rem;
+    line-height: 4rem;
+}
+/* 公用box */
+.order-box{
+    width: 90%;
+    padding: 2rem 5%;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 0 rgba(36,120,252,0.5);
+    background: #fff;
+    overflow: hidden;
+}
+/* 底部导航 */
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer-50 div:nth-child(1){
+    width: 50%;
+    text-align: center;
+    line-height: 5rem;
+    color: #999;
+    background: #f1f1f1;
+    float: left;
+}
+.footer-50 div:nth-child(2){
+    width: 50%;
+    text-align: center;
+    line-height: 5rem;
+    color: #999;
+    background: #f1f1f1;
+    float: left;
+}
+.footer-50 div.choose{
+    background: #1081FA;
+    color: #fff;
+}
+.index-head{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    background:#1081FA;
+}
+
+
+
+
+
