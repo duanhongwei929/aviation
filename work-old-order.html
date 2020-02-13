@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>航空工作人员</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/work-index.css">
+</head>
+<body>
+
+    <div class="index-head">历史订单</div>
+    <div style="height:46px"></div>
+
+    <!-- 内容 -->
+    <!-- 模糊搜索 -->
+    <div class="sarch big-box m-t-20 o-h">
+        <input type="text">
+        <span>搜索</span>
+    </div>
+
+    <!-- 内容 结束-->
+    <div class="work-nav">
+        <div class="back-grey o-h">
+            <div class="work-order o-h">
+                <p>订单：1234567890123</p>
+                <p>金额：123</p>
+                <span class="drop-down close">未确认</span>
+            </div>
+            <!---->
+            <div class="big-box drop-box">
+                <!-- 航班更改 -->
+                <div class="order-box m-b-20">
+                    <div class="order-left">
+                        <p>修改航班：xxx</p>
+                        <p>修改仓位：xxx</p>
+                        <p>修改货物种类：xxx</p>
+                        <p>修改等级运价：xxx</p>
+                    </div>
+                    <!-- 联系航空 -->
+                    <div class="order-right">
+                        <div class="but-100 but-blue p-r">航司沟通
+                            <span class="order-num">199</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 客户地址 -->
+                <div class="order-box m-b-20">
+                    <div class="order-left">
+                        <p>张三</p>
+                        <p>联系方式：<span>18731133002</span></p>
+                        <p>地址：<span>北京丰台区北京丰</span></p>
+                        <p>目的站：<span>石家庄市</span></p>
+                    </div>
+                    <!-- 联系客户 -->
+                    <div class="order-right">
+                        <div class="but-100 but-blue p-r">客户沟通
+                            <span class="order-num">199</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 客户地址 结束 -->
+            </div>
+            <!---->
+        </div>
+    </div>
+
+
+    <div style="height:50px"></div>
+    <footer class="footer footer-25">
+        <a href="work-index.html"><div>工作台</div></a>
+        <a href="work-contact.html"><div>通讯录</div></a>
+        <a href="work-news.html"><div>公告通知</div></a>
+        <a href="work-old-order.html"><div class="choose">历史订单</div></a>
+    </footer>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+    $('.drop-down').click(function(){
+        console.log(1)
+        if($('.drop-box').css('display') == 'none'){
+            $('.drop-box').css('display','block')
+            $('.drop-down').addClass('close')
+        }else if($('.drop-box').css('display')=='block'){
+            $('.drop-box').css('display','none')
+            $('.drop-down').removeClass('close')
+        }
+
+    })
+</script>
+
+

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>航空工作人员</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/work-index.css">
+</head>
+<body>
+
+    <div class="index-head">通讯录</div>
+    <div style="height:46px"></div>
+
+
+
+    <ul class="big-box contact">
+        <li>
+            <div class="contact-head">
+                <i class="people-icon f-l"></i>
+                <span class="f-l m-l-10">最近联系人</span>
+                <i class="more-icon more"></i>
+            </div>
+            <ul class="contact-people">
+                <li>张三</li>
+                <li>李四</li>
+                <li>王五</li>
+                <li>二傻</li>
+                <li>蛋蛋</li>
+            </ul>
+        </li>
+
+    </ul>
+
+
+    <div style="height:50px"></div>
+    <footer class="footer footer-25">
+        <a href="work-index.html"><div>工作台</div></a>
+        <a href="work-contact.html"><div class="choose">通讯录</div></a>
+        <a href="work-news.html"><div>公告通知</div></a>
+        <a href="work-old-order.html"><div>历史订单</div></a>
+    </footer>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+    $('.drop-down').click(function(){
+        console.log(1)
+        if($('.drop-box').css('display') == 'none'){
+            $('.drop-box').css('display','block')
+            $('.drop-down').addClass('close')
+        }else if($('.drop-box').css('display')=='block'){
+            $('.drop-box').css('display','none')
+            $('.drop-down').removeClass('close')
+        }
+
+    })
+</script>
+
+

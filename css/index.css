@@ -1,6 +1,7 @@
 .mine-head{
     height: 16rem;
-    background: #1081FA;
+    background: #1081FA url("../images/back-img.png")no-repeat;
+    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,13 +57,18 @@
     padding: 0 5%;
     margin-top: 2rem;
 }
-.index-form input{
+.index-form div{
     width: 90%;
-    font-size: 14px;
     padding: 1rem 5%;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
     border:1px solid #999999;
+}
+.index-form input{
+    font-size: 15px;
+    border:none;
+    display: inline-block;
+    width: calc(100% - 30px);
 }
 .index-select{
     padding: 0 5%;
@@ -125,9 +131,27 @@
     border-radius: 50%;
     margin: 10rem auto 0;
 }
-
-
-
+.news{
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+.news p{
+    padding:10px 0;
+    margin-right: 15px;
+}
+.mine-num{
+    font-style: normal;
+    display: inline-block;
+    height: 20px;
+    padding: 0 8px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    background: #FF3A3A;
+}
 
 
 

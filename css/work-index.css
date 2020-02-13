@@ -1,0 +1,153 @@
+.sarch input{
+    width: calc(70% - 2px);
+    border: 1px solid #1081FA;
+    height: 38px;
+    text-indent: 1rem;
+    float: left;
+}
+.sarch span{
+    display: inline-block;
+    width: 30%;
+    height: 40px;
+    color: #fff;
+    background: #1081FA;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+}
+/* 导航 */
+.work-nav{
+    width: 100%;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+.work-nav .nav12-5{
+    background: #f1f1f1;
+}
+.work-nav .nav12-5 li{
+    width: 14%;/* 12.5% */
+    text-align: center;
+    line-height: 40px;
+    float: left;
+}
+.work-nav .nav12-5 li a{
+    text-decoration:none;
+    color: #666;
+}
+.work-nav .nav12-5 li.choose{
+    background: #1081FA;
+}
+.work-nav .nav12-5 li.choose a{
+    color: #fff;
+}
+.work-order{
+    margin:2rem auto;
+    padding: 0 5%;
+}
+.work-order p{
+    float: left;
+    padding-right: 1rem;
+    line-height: 40px;
+}
+.work-order span{
+    float: right;
+    line-height: 40px;
+    padding-right: 20px;
+    background-image: url("../images/more.png");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: right 0px top 11px;
+}
+.work-order span.close{
+    background-image: url("../images/more2.png");
+}
+.order-left{
+    width: 70%;
+    float: left;
+}
+.order-left p{
+    margin-bottom: 1rem;
+}
+.order-right{
+    width: 30%;
+    float: right;
+}
+.order-num{
+    position: absolute;
+    right: -10px;
+    top:-10px;
+    height: 20px;
+    padding: 0 8px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    background: #FF3A3A;
+}
+/* 消息 */
+.work-news h1{
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+.work-news p{
+    color: #999;
+}
+/* 通讯录 */
+.contact>li{
+    padding: 0 1rem;
+}
+.contact .more-icon{
+    float: right;
+    width: 15px;
+    height: 50px;
+    background: url("../images/more.png") center no-repeat;
+    background-size: 15px auto;
+}
+.contact .more-icon.more{
+    background: url("../images/more2.png") center no-repeat;
+    background-size: 15px auto;
+}
+.contact-head{
+    color: #1081FA;
+    height: 50px;
+    line-height: 50px;
+    border-bottom:1px solid #e6e6e6;
+}
+.contact-people li{
+    height: 50px;
+    line-height: 50px;
+    margin-left: 50px;
+    color: #999;
+    border-bottom:1px solid #e6e6e6;
+}
+.people-icon{
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+    background: url("../images/people.png") center no-repeat;
+    background-size:40px;
+}
+.head-img{
+    position: fixed;
+    top: 6px;
+    left: 5%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius:50%;
+    background:url("../images/logo.png") no-repeat;
+    background-size: 30px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
