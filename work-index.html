@@ -9,127 +9,665 @@
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/work-index.css">
 </head>
-<body>
+<body style="background: #f7f7f7;">
 
+    <div class="index-head-box1">
+        <a href="work-mine.html"><div class="head-img"></div></a>
+        <div class="sarch big-box o-h">
+            <input type="text">
+            <span></span>
+        </div>
+    </div>
+
+
+<!--
     <div class="index-head">航空工作人员</div>
     <div style="height:46px"></div>
 
-    <!-- 头像 -->
-    <a href="work-mine.html"><div class="head-img"></div></a>
+    &lt;!&ndash; 头像 &ndash;&gt;
+    <a href="work-mine.html"><div class="head-img"></div></a>-->
 
     <!-- 内容 -->
     <!-- 模糊搜索 -->
-    <div class="sarch big-box m-t-20 o-h">
-        <input type="text">
-        <span>搜索</span>
-    </div>
+
 
     <!-- 内容 结束-->
     <div class="work-nav">
-        <ul class="nav12-5 o-h">
-           <li class="choose"><a href="">未确认</a></li>
-           <li><a href="">已确认</a></li>
-           <li><a href="">待支付</a></li>
-           <li><a href="">已支付</a></li>
-           <li><a href="">待招揽</a></li>
-           <li><a href="">已交付</a></li>
+        <ul class="nav12-5 o-h work-table">
+           <li class="choose">未确认</li>
+           <li>已确认</li>
+           <li>待支付</li>
+           <li>已支付</li>
+           <li>待招揽</li>
+           <li>已交付</li>
            <!--<li><a href="">已完成</a></li>-->
-           <li><a href="">售后</a></li>
+           <li>售后</li>
         </ul>
-
-        <div class="back-grey o-h m-t-20">
-            <div class="work-order o-h">
-                <p>订单：1234567890123</p>
-                <p class="color-red">金额：123</p>
-                <span class="drop-down close">未确认</span>
-            </div>
-            <!---->
-            <div class="big-box drop-box">
-                <!-- 航班更改 -->
-                <div class="order-box m-b-20">
-                    <div class="order-left">
-                        <p>
-                            修改航班：
-                            <select>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>2</option>
-                            </select>
-                        </p>
-                        <p>
-                            修改仓位：
-                            <select>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>2</option>
-                            </select>
-                        </p>
-                        <p>
-                            修改货物种类：
-                            <select>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>2</option>
-                            </select>
-                        </p>
-                        <p>
-                            修改等级运价：
-                            <select>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>2</option>
-                            </select>
-                        </p>
+        <!---------------------------------------------------->
+        <ul class="work-table-box m-b-20">
+            <li>
+                <div class="index-back-img o-h m-t-20">
+                    <div class="work-order o-h">
+                        <p><i class=""></i>订单：1234567890123</p>
+                        <p class="color-red">金额：123</p>
+                        <span class="drop-down close">未确认</span>
                     </div>
-                    <!-- 联系航空 -->
-                    <div class="order-right">
-                        <div class="but-100 but-blue p-r">航司沟通
-                            <span class="order-num">199</span>
+                    <!---->
+                    <div class="big-box drop-box">
+                        <!-- 航班更改 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>
+                                    修改航班：
+                                    <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>2</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    修改仓位：
+                                    <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>2</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    修改货物种类：
+                                    <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>2</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    修改等级运价：
+                                    <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>2</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <!-- 联系航空 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">航司沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- 客户地址 -->
-                <div class="order-box m-b-20">
-                    <div class="order-left">
-                        <p>张三</p>
-                        <p>联系方式：<span>18731133002</span></p>
-                        <p>地址：<span>北京丰台区北京丰</span></p>
-                        <p>目的站：<span>石家庄市</span></p>
-                    </div>
-                    <!-- 联系客户 -->
-                    <div class="order-right">
-                        <div class="but-100 but-blue p-r">客户沟通
-                            <span class="order-num">199</span>
+                        <!-- 客户地址 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>张三</p>
+                                <p>联系方式：<span>18731133002</span></p>
+                                <p>地址：<span>北京丰台区北京丰</span></p>
+                                <p>目的站：<span>石家庄市</span></p>
+                            </div>
+                            <!-- 联系客户 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">客户沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- 客户地址 结束 -->
+                        <!-- 客户地址 结束 -->
 
-                <div class="order-box m-b-20">
-                    <div class="but-30 but-blue">+ 上传图片</div>
-                    <div class="o-h">
-                        <div class="f-l m-t-10">
+                        <div class="order-box m-b-20">
+                            <div class="but-30 but-blue">+ 上传图片</div>
+                            <div class="o-h">
+                                <div class="f-l m-t-10" style="width: 60%;">
+                                    <p>
+                                        确认操作：
+                                        <select>
+                                            <option>未确认</option>
+                                            <option>已确认</option>
+                                            <option>待支付</option>
+                                            <option>已支付</option>
+                                            <option>待招揽</option>
+                                            <option>已交付</option>
+                                        </select>
+                                    </p>
+                                </div>
+
+                                <div class="but-30 but-blue f-r">确认</div>
+                            </div>
+                        </div>
+                        <!-- 上传 -->
+
+                    </div>
+                    <!---->
+                </div>
+                <div class="index-back-img o-h m-t-20">
+                    <div class="work-order o-h">
+                        <p><i class=""></i>订单：1234567890123</p>
+                        <p class="color-red">金额：123</p>
+                        <span class="drop-down close">未确认</span>
+                    </div>
+                    <!---->
+                    <div class="big-box drop-box">
+                        <!-- 航班更改 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>
+                                    修改航班：
+                                    <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>2</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    修改仓位：
+                                    <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>2</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    修改货物种类：
+                                    <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>2</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    修改等级运价：
+                                    <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>2</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <!-- 联系航空 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">航司沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 客户地址 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>张三</p>
+                                <p>联系方式：<span>18731133002</span></p>
+                                <p>地址：<span>北京丰台区北京丰</span></p>
+                                <p>目的站：<span>石家庄市</span></p>
+                            </div>
+                            <!-- 联系客户 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">客户沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 客户地址 结束 -->
+
+                        <div class="order-box m-b-20">
+                            <div class="but-30 but-blue">+ 上传图片</div>
+                            <div class="o-h">
+                                <div class="f-l m-t-10" style="width: 60%;">
+                                    <p>
+                                        确认操作：
+                                        <select>
+                                            <option>未确认</option>
+                                            <option>已确认</option>
+                                            <option>待支付</option>
+                                            <option>已支付</option>
+                                            <option>待招揽</option>
+                                            <option>已交付</option>
+                                        </select>
+                                    </p>
+                                </div>
+
+                                <div class="but-30 but-blue f-r">确认</div>
+                            </div>
+                        </div>
+                        <!-- 上传 -->
+
+                    </div>
+                    <!---->
+                </div>
+            </li>
+
+            <li>
+                <div class="index-back-img o-h m-t-20">
+                <div class="work-order o-h">
+                    <p><i class=""></i>订单：1234567890123</p>
+                    <p class="color-red">金额：123</p>
+                    <span class="drop-down close">已确认</span>
+                </div>
+                <!---->
+                <div class="big-box drop-box">
+                    <!-- 航班更改 -->
+                    <div class="order-box m-b-20">
+                        <div class="order-left">
                             <p>
-                                确认操作：
-                                <select>
-                                    <option>未确认</option>
-                                    <option>已确认</option>
-                                    <option>待支付</option>
-                                    <option>已支付</option>
-                                    <option>待招揽</option>
-                                    <option>已交付</option>
-                                </select>
+                                修改航班：123
+                            </p>
+                            <p>
+                                修改仓位：456
+                            </p>
+                            <p>
+                                修改货物种类：服装
+                            </p>
+                            <p>
+                                修改等级运价：100元
                             </p>
                         </div>
-
-                        <div class="but-30 but-blue f-r">确认</div>
+                        <!-- 联系航空 -->
+                        <div class="order-right">
+                            <div class="but-100 but-blue p-r">航司沟通
+                                <span class="order-num">199</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- 上传 -->
+                    <!-- 客户地址 -->
+                    <div class="order-box m-b-20">
+                        <div class="order-left">
+                            <p>张三</p>
+                            <p>联系方式：<span>18731133002</span></p>
+                            <p>地址：<span>北京丰台区北京丰</span></p>
+                            <p>目的站：<span>石家庄市</span></p>
+                        </div>
+                        <!-- 联系客户 -->
+                        <div class="order-right">
+                            <div class="but-100 but-blue p-r">客户沟通
+                                <span class="order-num">199</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 客户地址 结束 -->
 
+                    <div class="order-box m-b-20">
+                        <div class="but-30 but-blue">+ 上传图片</div>
+                        <div class="o-h">
+                            <div class="f-l m-t-10" style="width: 60%;">
+                                <p>
+                                    确认操作：
+                                    <select>
+                                        <option>已确认</option>
+                                        <option>待支付</option>
+                                        <option>已支付</option>
+                                        <option>待招揽</option>
+                                        <option>已交付</option>
+                                    </select>
+                                </p>
+                            </div>
+
+                            <div class="but-30 but-blue f-r">确认</div>
+                        </div>
+                    </div>
+                    <!-- 上传 -->
+
+                </div>
+                <!---->
             </div>
-            <!---->
-        </div>
+        </li>
+
+            <li>
+                <div class="index-back-img o-h m-t-20">
+                    <div class="work-order o-h">
+                        <p><i class=""></i>订单：1234567890123</p>
+                        <p class="color-red">金额：123</p>
+                        <span class="drop-down close">待支付</span>
+                    </div>
+                    <!---->
+                    <div class="big-box drop-box">
+                        <!-- 航班更改 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>
+                                    修改航班：123
+                                </p>
+                                <p>
+                                    修改仓位：456
+                                </p>
+                                <p>
+                                    修改货物种类：服装
+                                </p>
+                                <p>
+                                    修改等级运价：100元
+                                </p>
+                            </div>
+                            <!-- 联系航空 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">航司沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 客户地址 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>张三</p>
+                                <p>联系方式：<span>18731133002</span></p>
+                                <p>地址：<span>北京丰台区北京丰</span></p>
+                                <p>目的站：<span>石家庄市</span></p>
+                            </div>
+                            <!-- 联系客户 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">客户沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 客户地址 结束 -->
+
+                        <div class="order-box m-b-20">
+                            <div class="but-30 but-blue">+ 上传图片</div>
+                            <div class="o-h">
+                                <div class="f-l m-t-10" style="width: 60%;">
+                                    <p>
+                                        确认操作：
+                                        <select>
+                                            <option>未确认</option>
+                                            <option>已确认</option>
+                                            <option>待支付</option>
+                                            <option>已支付</option>
+                                            <option>待招揽</option>
+                                            <option>已交付</option>
+                                        </select>
+                                    </p>
+                                </div>
+
+                                <div class="but-30 but-blue f-r">确认</div>
+                            </div>
+                        </div>
+                        <!-- 上传 -->
+
+                    </div>
+                    <!---->
+                </div>
+            </li>
+
+            <li>
+                <div class="index-back-img o-h m-t-20">
+                    <div class="work-order o-h">
+                        <p><i class=""></i>订单：1234567890123</p>
+                        <p class="color-red">金额：123</p>
+                        <span class="drop-down close">已支付</span>
+                    </div>
+                    <!---->
+                    <div class="big-box drop-box">
+                        <!-- 航班更改 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>
+                                    修改航班：123
+                                </p>
+                                <p>
+                                    修改仓位：456
+                                </p>
+                                <p>
+                                    修改货物种类：服装
+                                </p>
+                                <p>
+                                    修改等级运价：100元
+                                </p>
+                            </div>
+                            <!-- 联系航空 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">航司沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 客户地址 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>张三</p>
+                                <p>联系方式：<span>18731133002</span></p>
+                                <p>地址：<span>北京丰台区北京丰</span></p>
+                                <p>目的站：<span>石家庄市</span></p>
+                            </div>
+                            <!-- 联系客户 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">客户沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 客户地址 结束 -->
+
+                        <div class="order-box m-b-20">
+                            <div class="but-30 but-blue">+ 上传图片</div>
+                            <div class="o-h">
+                                <div class="f-l m-t-10" style="width: 60%;">
+                                    <p>
+                                        确认操作：
+                                        <select>
+                                            <option>未确认</option>
+                                            <option>已确认</option>
+                                            <option>待支付</option>
+                                            <option>已支付</option>
+                                            <option>待招揽</option>
+                                            <option>已交付</option>
+                                        </select>
+                                    </p>
+                                </div>
+
+                                <div class="but-30 but-blue f-r">确认</div>
+                            </div>
+                        </div>
+                        <!-- 上传 -->
+
+                    </div>
+                    <!---->
+                </div>
+            </li>
+
+            <li>
+                <div class="index-back-img o-h m-t-20">
+                    <div class="work-order o-h">
+                        <p><i class=""></i>订单：1234567890123</p>
+                        <p class="color-red">金额：123</p>
+                        <span class="drop-down close">待招揽</span>
+                    </div>
+                    <!---->
+                    <div class="big-box drop-box">
+                        <!-- 航班更改 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>修改航班：123</p>
+                                <p>修改仓位：456</p>
+                                <p>修改货物种类：服装</p>
+                                <p>修改等级运价：100元</p>
+                            </div>
+                            <!-- 联系航空 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">航司沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 客户地址 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>张三</p>
+                                <p>联系方式：<span>18731133002</span></p>
+                                <p>地址：<span>北京丰台区北京丰</span></p>
+                                <p>目的站：<span>石家庄市</span></p>
+                            </div>
+                            <!-- 联系客户 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">客户沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 客户地址 结束 -->
+
+                        <div class="order-box m-b-20">
+                            <div class="but-30 but-blue">+ 上传图片</div>
+                            <div class="o-h">
+                                <div class="f-l m-t-10" style="width: 60%;">
+                                    <p>
+                                        确认操作：
+                                        <select>
+                                            <option>未确认</option>
+                                            <option>已确认</option>
+                                            <option>待支付</option>
+                                            <option>已支付</option>
+                                            <option>待招揽</option>
+                                            <option>已交付</option>
+                                        </select>
+                                    </p>
+                                </div>
+
+                                <div class="but-30 but-blue f-r">确认</div>
+                            </div>
+                        </div>
+                        <!-- 上传 -->
+
+                    </div>
+                    <!---->
+                </div>
+            </li>
+
+            <li>
+                <div class="index-back-img o-h m-t-20">
+                    <div class="work-order o-h">
+                        <p><i class=""></i>订单：1234567890123</p>
+                        <p class="color-red">金额：123</p>
+                        <span class="drop-down close">已交付</span>
+                    </div>
+                    <!---->
+                    <div class="big-box drop-box">
+                        <!-- 航班更改 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>修改航班：123</p>
+                                <p>修改仓位：456</p>
+                                <p>修改货物种类：服装</p>
+                                <p>修改等级运价：100元</p>
+                            </div>
+                            <!-- 联系航空 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">航司沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 客户地址 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>张三</p>
+                                <p>联系方式：<span>18731133002</span></p>
+                                <p>地址：<span>北京丰台区北京丰</span></p>
+                                <p>目的站：<span>石家庄市</span></p>
+                            </div>
+                            <!-- 联系客户 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">客户沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 客户地址 结束 -->
+
+                        <div class="order-box m-b-20">
+                            <div class="but-30 but-blue">+ 上传图片</div>
+                            <div class="o-h">
+                                <div class="f-l m-t-10" style="width: 60%;">
+                                    <p>
+                                        确认操作：
+                                        <select>
+                                            <option>未确认</option>
+                                            <option>已确认</option>
+                                            <option>待支付</option>
+                                            <option>已支付</option>
+                                            <option>待招揽</option>
+                                            <option>已交付</option>
+                                        </select>
+                                    </p>
+                                </div>
+
+                                <div class="but-30 but-blue f-r">确认</div>
+                            </div>
+                        </div>
+                        <!-- 上传 -->
+
+                    </div>
+                    <!---->
+                </div>
+            </li>
+
+            <li>
+                <div class="index-back-img o-h m-t-20">
+                    <div class="work-order o-h">
+                        <p><i class=""></i>订单：1234567890123</p>
+                        <p class="color-red">金额：123</p>
+                        <span class="drop-down close">售后</span>
+                    </div>
+                    <!---->
+                    <div class="big-box drop-box">
+                        <!-- 航班更改 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>修改航班：123</p>
+                                <p>修改仓位：456</p>
+                                <p>修改货物种类：服装</p>
+                                <p>修改等级运价：100元</p>
+                            </div>
+                            <!-- 联系航空 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">航司沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 客户地址 -->
+                        <div class="order-box m-b-20">
+                            <div class="order-left">
+                                <p>张三</p>
+                                <p>联系方式：<span>18731133002</span></p>
+                                <p>地址：<span>北京丰台区北京丰</span></p>
+                                <p>目的站：<span>石家庄市</span></p>
+                            </div>
+                            <!-- 联系客户 -->
+                            <div class="order-right">
+                                <div class="but-100 but-blue p-r">客户沟通
+                                    <span class="order-num">199</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 客户地址 结束 -->
+
+                        <div class="order-box m-b-20">
+                            <div class="but-30 but-blue">+ 上传图片</div>
+                            <div class="o-h">
+                                <div class="f-l m-t-10" style="width: 60%;">
+                                    <p>
+                                        确认操作：
+                                        <select>
+                                            <option>未确认</option>
+                                            <option>已确认</option>
+                                            <option>待支付</option>
+                                            <option>已支付</option>
+                                            <option>待招揽</option>
+                                            <option>已交付</option>
+                                        </select>
+                                    </p>
+                                </div>
+
+                                <div class="but-30 but-blue f-r">确认</div>
+                            </div>
+                        </div>
+                        <!-- 上传 -->
+
+                    </div>
+                    <!---->
+                </div>
+            </li>
+
+
+        </ul>
+        <!---------------------------------------------------->
     </div>
 
 
@@ -144,8 +682,7 @@
 </html>
 <script src="js/jquery.min.js"></script>
 <script>
-    $('.drop-down').click(function(){
-        console.log(1)
+    /*$('.work-table-box li .drop-down').click(function(){
         if($('.drop-box').css('display') == 'none'){
             $('.drop-box').css('display','block')
             $('.drop-down').addClass('close')
@@ -154,7 +691,28 @@
             $('.drop-down').removeClass('close')
         }
 
+    })*/
+
+    $('.work-table-box li .work-order').on('click',function(){
+        $(this).next().toggle();
+        // if($('.drop-box').eq($(this).index()).css('display') == 'none'){
+        //     $('.drop-box').css('display','block')
+        //     $('.drop-box').addClass('close')
+        // }else if($('.drop-box').eq($(this).index()).css('display')=='block'){
+        //     $('.drop-box').css('display','none')
+        //     $('.drop-box').removeClass('close')
+        // }
     })
+
+
+
+
+    /* table */
+    $('.work-table li').click(function(){
+        $(this).addClass('choose').siblings().removeClass('choose')
+        $('.work-table-box li').eq($(this).index()).css('display','block').siblings().css('display','none')
+    })
+
 </script>
 
 

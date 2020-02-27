@@ -25,6 +25,13 @@ input[type=button], input[type=submit], input[type=file], button
 { -webkit-appearance: none; }
 input:focus{outline:none;}
 input{background: none;}
+
+/* 清除苹果下拉默认样式 */
+select{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
 /* 定位 */
 .p-r{ position:relative;}
 .p-a{ position:absolute;}
@@ -43,16 +50,23 @@ input{background: none;}
 /* 字体颜色 */
 .color-red{ color: #FF3A3A;}
 /* 背景颜色 */
-.back-grey{ background: #f1f1f1;}
+/*.index-back-img{ background: #f1f1f1;}*/
+.index-back-img{
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    background: #fff;
+}
 
 /* 按钮颜色 */
 .but-blue{
     color:#fff;
-    background: #3785FF;
+    background: linear-gradient(120deg,#5b9bff ,#1081FA);
+    box-shadow: 0 0 10px 0 rgba(16,129,250,0.5);
 }
 .but-yellow{
     color:#fff;
-    background: #FFAB2B;
+    background: linear-gradient(120deg,#ffc469,#FFAB2B);
+    box-shadow: 0 0 10px 0 rgba(255,171,43,0.5);
 }
 .but-grey{
     color:#fff;
@@ -68,11 +82,19 @@ input{background: none;}
 }
 .but-100{
     width: 90%;
-    height:4rem;
+    height:3rem;
     text-align: center;
     margin: 0 5% 30px;
     border-radius: 1rem;
-    line-height: 4rem;
+    line-height: 3rem;
+}
+.but-100-5{
+    width: 90%;
+    height:5rem;
+    text-align: center;
+    margin: 0 5% 30px;
+    border-radius: 1rem;
+    line-height: 5rem;
 }
 /* 公用box */
 .big-box{
@@ -94,6 +116,8 @@ input{background: none;}
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    z-index: 999999;
 }
 .footer-25 div{
     width:25%;
@@ -132,6 +156,7 @@ input{background: none;}
     text-align: center;
     color: #fff;
     background:#1081FA;
+    z-index: 99999;
 }
 .index-head2{
     position: fixed;
@@ -169,8 +194,58 @@ input{background: none;}
     background: url("../images/name.png") no-repeat;
     background-size: 20px;
 }
+.icon-phone{
+    background: url("../images/phone.png") no-repeat;
+    background-size: 20px;
+}
+.icon-address{
+    background: url("../images/address.png") no-repeat;
+    background-size: 20px;
+}
+.icon-cw{
+    background: url("../images/cw.png") no-repeat;
+    background-size: 20px;
+}
+.icon-md{
+    background: url("../images/md.png") no-repeat;
+    background-size: 20px;
+}
+.icon-hb{
+    background: url("../images/hb.png") no-repeat;
+    background-size: 20px;
+}
+.icon-hu{
+    background: url("../images/hu.png") no-repeat;
+    background-size: 20px;
+}
+.icon-dj{
+    background: url("../images/dj.png") no-repeat;
+    background-size: 20px;
+}
 
 
+
+.index-head-box{
+    width:100%;
+    height: 180px;
+    background: url("../images/index-img.jpg") bottom no-repeat;
+    background-size: 100% auto;
+    padding-top: 10px;
+}
+.index-head-box1{
+    width:100%;
+    height: 180px;
+    background: url("../images/index-img1.jpg") bottom no-repeat;
+    background-size: 100% auto;
+    padding-top: 10px;
+}
+.index-head-box2{
+    width:100%;
+    height: 180px;
+    background: url("../images/index-img2.jpg") bottom no-repeat;
+    background-size: 100% auto;
+    padding-top: 10px;
+}
 
 
 
