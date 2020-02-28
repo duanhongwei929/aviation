@@ -23,3 +23,35 @@
   if (!doc.addEventListener) return;
   win.addEventListener(resizeEvt, recalc, false);
 })(document, window);
+
+/*===============================================*/
+
+
+var path = 'http://101.201.220.183:9998'
+
+
+
+$(function(){
+    /* 获取工人 token */
+    var tkn = getCookie(tk);
+    $.ajax({
+        url: path + '/sgjA/getyh',
+        type:'GET',
+        data:{
+            token:tkn
+        },
+        beforeSend: function (XMLHttpRequest) {
+            XMLHttpRequest.setRequestHeader("token", tkn);
+        },
+        success:function(result){
+            //console.log(result.msg)
+        },
+        error:function(err){
+            //console.log(err.msg)
+        }
+    })
+
+})
+
+
+

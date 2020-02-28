@@ -21,12 +21,12 @@ $(".lgBtn").click(function(){
 		var json = JSON.stringify({
 			// username: "",
 			password: logPass,
-			// code: "",		//验证码
+            loginType:1, // 登录方式 0 验证码登录 1 密码登录
 			phone: logPhone
 		})
 		// console.log(json)
 		$.ajax({
-			url: path + '/linU/login',
+			url: path + '/user/loginOrRegister.html',
 			type:'POST',  //提交方法是POST
 			data:json, //以JSON字符串形式把 user 传到后台
 			contentType: 'application/json;charset=utf-8',
@@ -36,10 +36,11 @@ $(".lgBtn").click(function(){
 				$(".login-tip").html("登录失败！请重试。");
 			},
 			success:function(result){	//请求成功的回调方法
-				if(result != "" && result.code == 1){
+				if(result != "" && result.code == 200){
 					addCookie(tk, result.token, 24)
-						//跳转到个人信息"/user-person.html"
-						window.location.href='./phone.html';				
+					//console.log(result)
+					//console.log('成功')
+					window.location.href='index.html';
 				}else{
 					alert(result.msg);
 				}
@@ -50,7 +51,7 @@ $(".lgBtn").click(function(){
 // 找回密码
 $(".newBtn").click(function(){
 	var user = new Object();
-	 // $.trim删除字符串开始末尾的空格
+	// $.trim删除字符串开始末尾的空格
 	logPhone = $.trim($(".newPhone").val());
 	newPass = $.trim($(".newPass").val());
 	codeNum =  $.trim($(".newCode").val());
@@ -78,7 +79,7 @@ $(".newBtn").click(function(){
 		})
 		// console.log(json)
 		$.ajax({
-			url: path + '/linU/findPassword',
+			//url: path + '/linU/findPassword',
 			type:'POST',  //提交方法是POST
 			data:json, //以JSON字符串形式把 user 传到后台
 			contentType: 'application/json;charset=utf-8',
@@ -89,7 +90,7 @@ $(".newBtn").click(function(){
 			success:function(result){	//请求成功的回调方法
 				// console.log(result)
 				if(result != "" && result.code == 1){
-						window.location.href='./login.html';	
+						window.location.href='login.html';
 				}else{
 					$(".login-tip").show();
 					$(".login-tip").html(result.msg);
@@ -101,19 +102,20 @@ $(".newBtn").click(function(){
 
 
 
-
 // 获取验证码
 function yzm(thiz){
 	var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;
 	regPhone = $.trim($(thiz).parent().prev('.login-ipt').val());
+	var code = $.trim($('input[name=getCode]').val())
 	if(regPhone == "" || regPhone == "undefined" || regPhone == null || regPhone == "null" || !myreg.test(regPhone)){
 		alert("请填写正确的手机号");
 	}else{
 		$.ajax({
 			type:'POST',
-			url:path + "/linU/sendCode",
+			url:path + "/ajax/sendCode.html",
 			data:{
-				phone: regPhone
+				phone: regPhone,
+				code:code
 			}, //以JSON字符串形式把 user 传到后台
 			dataType:'json', //后台返回的数据类型是json文本
 			error:function(){  //请求失败的回调方法
@@ -121,11 +123,12 @@ function yzm(thiz){
 				alert("验证码发送失败!");
 			},
 			success:function(result){
-					if(result != "" && result.code == 1){
+					//console.log(result)
+					if(result != "" && result.code == 200){
 						var time = 60;
 						var timer = setInterval(function(){
 						    time--;
-						   $(thiz).html(time+"秒重发");
+						    $(thiz).html(time+"秒重发");
 							$(thiz).css({'background':'#ccc','pointer-events':'none'});
 							if(time==0){
 						        clearInterval(timer);
@@ -167,21 +170,22 @@ $('.regBtn').click(function(){
 	}else{
 		var json = JSON.stringify({
 			phone: regPhone,
-			code: codeNum,		//验证码
+            loginType:0, // 密码登录-1 验证码登录-0
 			password: regPass
 		});
 		$.ajax({
 			type:'POST',
-			url:path + "/linU/register",
+			url:path + "/user/loginOrRegister.html",
 			data:json, //以JSON字符串形式把 user 传到后台
 			contentType: 'application/json;charset=utf-8',
 			dataType:'json', //后台返回的数据类型是json文本
-			error:function(){  //请求失败的回调方法
+			error:function(err){  //请求失败的回调方法
 				alert("注册失败请重试!");
+				console.log(err)
 			},
 			success:function(result){
 					if(result != "" && result.code == 1){
-						alert(result.msg)
+						//alert(result.msg)
 						window.location.href='./login.html';				//若登录成功，跳转到"/main.html"
 					}else{
 						alert(result.msg);
